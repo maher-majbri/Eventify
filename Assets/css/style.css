@@ -1,0 +1,42 @@
+﻿
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../fonts/Poppins/Poppins-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand-Light';
+    src: url('../fonts/Quicksand/Quicksand-Light.ttf') format('truetype');
+}
+
+.title-text {
+  font-family: 'Poppins-Black';
+}
+
+.normal-text {
+  font-family: 'Quicksand-Light';
+}
+h1,h2,h3,h4,h5{
+    font-family: Poppins-Black;
+}
+
+p {
+     font-family: Quicksand-Light;
+}
+
+body {
+   /* font-family:Calibri;
+    font-size:1.3rem;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+*/
+
+}
+.logo {
+    border-bottom :3px solid #fff;
+    font-family: Poppins-Black;
+}
+
+.nav-link {
+    font-family: Poppins-Black;
+    color:#808080;
+}
