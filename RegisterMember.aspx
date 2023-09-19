@@ -38,10 +38,17 @@
     <div class="mb-3 row">
         <label class="col-sm-3 col-form-label"></label>
         <div class="col-sm-9">
-            <asp:Button ID="btnRegister" CssClass="btn btn-success m-4 w-100 mx-auto" runat="server" Text="Register" />
+            <asp:Button ID="btnRegister" CssClass="btn btn-success m-4 w-100 mx-auto" runat="server" Text="Register" OnClick="btnRegister_Click" />
         </div>
     </div>
-
+    <div class="mb-3 row text-center">
+        <asp:Panel ID="pnlMessageError" runat="server" CssClass="alert alert-danger" Visible="false">
+            <asp:Label ID="lblMessageError" runat="server" Text=""></asp:Label>
+        </asp:Panel>
+        <asp:Panel ID="pnlMessageOk" runat="server" CssClass="alert alert-success" Visible="false">
+            <asp:Label ID="lblMessageOk" runat="server" Text=""></asp:Label>
+        </asp:Panel>
+    </div>
 
     </div>
 </div>
