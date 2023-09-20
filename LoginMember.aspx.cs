@@ -21,7 +21,10 @@ public partial class LoginMember : System.Web.UI.Page
         DataRow dr= MemberData.Login(txtEmail.Text, txtPassword.Text);
         if (dr != null)
         {
-            // TODO: save data in session
+            Session["MemberId"] = dr["Id"];
+            Session["MemberName"] = dr["Name"];
+            Session["MemberEmail"] = dr["Email"];
+            Session["MemberPassword"] = dr["Password"];
             Response.Redirect("Member");
         }
         else

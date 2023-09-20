@@ -22,10 +22,10 @@ public class DataAccess
 
     private static void OpenConnection() {
         if (con.State != ConnectionState.Open)
-        {
+           {
             con.Open();
-        }
-    }
+          }
+      }
 
     private static void CloseConnection() {
         if (con.State != ConnectionState.Closed)

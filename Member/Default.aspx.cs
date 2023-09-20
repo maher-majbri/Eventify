@@ -9,6 +9,6 @@ public partial class Member_Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        lblMemberName.Text = Session["MemberName"].ToString();
     }
 }

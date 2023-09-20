@@ -11,8 +11,7 @@ public partial class RegisterMember : System.Web.UI.Page
     {
         pnlMessageOk.Visible = false;
         lblMessageOk.Text = "";
-        pnlMessageEr
-            ror.Visible = false;
+        pnlMessageError.Visible = false;
         lblMessageError.Text = "";
     }
 

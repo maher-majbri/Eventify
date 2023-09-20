@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-        <asp:TextBox ID="txtID" runat="server" Visible="false"></asp:TextBox>
+        <asp:TextBox ID="txtID" runat="server" Visible="false">*</asp:TextBox>
 
     <div class="container">
 
@@ -13,10 +13,12 @@
             <div class="col-md-6">
                 <label for="txtName" class="form-label">Member name:</label>
                 <asp:TextBox ID="txtName" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtName" CssClass="text-danger m-4" Text="*"></asp:RequiredFieldValidator>
             </div>
             <div class="col-md-6">
                 <label for="txtEmail" class="form-label">Email:</label>
                 <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)" Text="*"></asp:RegularExpressionValidator>
             </div>
             <div class="col-md-6">
                 <label for="txtPassword" class="form-label">Password:</label>
@@ -26,7 +28,7 @@
                 <label for="txtPhone" class="form-label">Phone:</label>
                 <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
-  
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         </div>
 
         <div class="form-group row m-5">
